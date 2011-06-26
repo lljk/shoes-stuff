@@ -1,0 +1,9 @@
+  this is a simple music directory browser.  !! CHANGE THE SECOND TO LAST LINE OF CODE TO POINT TO YOUR MUSIC DIRECTORY !! - it points to mine, and that won't do you much good!
+
+  my default background is black, so forgive me if it looks a little funny ;)
+
+  it will look in a given directory for image files, and use the first one it finds as the image to represent the directory.  you'll also need a jpg image file called 'no_cover.jpg' in the directory the script is running from.  the 'up' button on the left side moves you up one directory in the structure.  the directories and music files (.mp3, .ogg, .flac, .wav) within the current directory are shown on the right side - first the directories, and then the files.
+
+  clicking on files shown on the right side will select them, clicking them again will unselect them.  clicking on the directory image shown on the left side will select all of the files shown on the right.  once some files are selected, you can send a signal to the Shoes main app - in this example to either append or prepend the tracks to an imaginary playlist - with the buttons ' list << ' and ' >> list ' on the bottom of the right side.
+
+  my music directory is set up something like this:  tunes/hendrix/electric ladyland  - and the browser will work best with this structure, but any should be fine (i think!)
