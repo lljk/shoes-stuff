@@ -1,3 +1,7 @@
+# click tracks to select / unselect
+# up / down buttons to move tracks
+# play button sends selected tracks to Shoes main app
+
 require 'observer'
 
 class ListManager < Shoes::Widget
