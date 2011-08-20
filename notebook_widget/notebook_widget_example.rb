@@ -1,5 +1,5 @@
 class Page < Shoes::Widget
-	attr_accessor :name, :body
+	attr_accessor :body
 	
 	def initialize(name)
 		@name = name
@@ -20,7 +20,6 @@ class NoteBook < Shoes::Widget
 	attr_reader :pages
 	
 	def initialize(first_page)
-		@pnum = 0
 		@pages = {}
 		
 		@f = flow width: self.parent.width, height: 50, displace_top: 0
@@ -40,8 +39,6 @@ class NoteBook < Shoes::Widget
 			@pages.each{|k, v| v.body.hide}
 			@pages[name].body.show
 		}
-		
-		@pnum += 1
 	end
 	
 end
