@@ -1,0 +1,34 @@
+NoteBook Widget...
+
+  here's an example of a widget that functions something like a tabbed browser.
+
+  it's still pretty rough around the edges, but i thought i'd put it out there...
+
+  a note_book is initialized with the name of the first tab, so you create it in a Shoes::App using something like this:
+
+    nb = note_book("page 1")
+
+  this adds a button at the top of the main app with the title "page 1".  it also assigns "page 1" as a key in a hash - NoteBook#pages.  This hash is used when adding content to each page with the NoteBook#add method, which takes a block that will be appended to the page.  adding content to "page 1" would look like this:
+
+    nb.pages["page 1"].add{para "this is page one!"}
+
+  new pages are created with NoteBook#add_page, taking the name of the tab and hash entry as an argument.
+
+    nb.add_page("page 2")
+
+  you can now add content to "page 2" in the same way you did for "page 1", using
+
+  nb.pages["page 2"].add{}
+
+  you can add more content to any page at any time - it's really just appending to the flow that is a page.
+
+
+  so here's the breakdown:
+
+note_book(page_name)   -  creates a new NoteBook, and a first page, referenced in the #pages hash with the key [page_name]
+
+NoteBook#pages  -  is a hash of all the pages
+
+NoteBook#add_page(page_name)   -  creates a new page in the NoteBook, referenced in the #pages hash with the key [page_name]
+
+NoteBook#pages[page_name].add{}   -  appends contents of the block to the page referenced
