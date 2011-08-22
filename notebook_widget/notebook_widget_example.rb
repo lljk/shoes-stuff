@@ -52,7 +52,7 @@ Shoes.app do
 		100.times{para "seamonkeys!!", stroke: blue}
 	}
 	
-		nb.pages["tiddlywinks"].add{
+	nb.pages["tiddlywinks"].add{
 		10.times{para "more tiddlywinks!! ", stroke: orange}
 	}
 	
