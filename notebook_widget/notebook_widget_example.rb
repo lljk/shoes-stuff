@@ -8,9 +8,7 @@ class Page < Shoes::Widget
 	end
 	
 	def add
-		@body.append do
-			yield
-		end
+		@body.append{yield}
 	end
 	
 end
@@ -29,9 +27,7 @@ class NoteBook < Shoes::Widget
 	end
 
 	def add_page(name)
-		@f.append{
-			@tab = button(name)
-		}
+		@f.append{@tab = button(name)}
 		
 		@pages[name] = page(name)
 		
