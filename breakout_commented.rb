@@ -187,7 +187,7 @@ Shoes.app do
 		@pattern = []
 		@values = [10, 10, 10, 25, 25, 50]
 		
-		# to make the wall, first we make a random symetrical array of  1's and 0's,
+		# to make the wall, first we make a random symmetrical array of  1's and 0's,
 		# and randomly assign a value to each brick
 		height.times{
 			@half_row = []
