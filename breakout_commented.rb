@@ -1,3 +1,10 @@
+# a dumb little breakout game by lljk
+
+# use the mouse or left and right keys to move the paddle
+# space bar or left click to launch ball
+# space bar while ball is moving to pause game
+
+
 # First, we'll make widgets for the ball, bricks, paddle, and bonus stars
 
 class BreakoutBall < Shoes::Widget
