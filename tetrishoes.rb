@@ -286,7 +286,7 @@ space bar to start and pause play", stroke: white, align: "center"
 		@status_area = stack width: 210, height: 410, top: 15, left: 255 do
 			background gradient(black, rgb(20, 20, 25))
 			border white
-			@next_area = stack width: 200, height: 200, top: 60, left: 53# do
+			@next_area = stack width: 200, height: 200, top: 60, left: 53
 			para "next piece", stroke: white, align: "center", displace_top: 40
 			@score_and_rows = para " ", stroke: white, align: "center", displace_top: 240
 		end
