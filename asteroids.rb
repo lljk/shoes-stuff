@@ -136,7 +136,7 @@ class Asteroid < Shoes::Widget
 		x11 = 0; y11 = y10 - rand(size * 0.4).round
 		x12 = rand(size * 0.1).round + (size * 0.1); y12 = rand(size * 0.1).round + (size * 0.1)
 		
-		@slot = stack top: 30, do
+		@slot = stack top: 30 do
 			shape{
 				fill black
 				stroke lime
