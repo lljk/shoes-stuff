@@ -243,7 +243,7 @@ end	#module Sudoku
 			if cell.entry == 0
 				slot.hover{
 					slot.append{border gradient(green, lime)}
-					keypress{|entry| set_entry(slot, cell, entry) if hovering?(slot)}  ### doesn't work so well without
+					keypress{|entry| set_entry(slot, cell, entry) if hovering?(slot)}  ### doesn't work so well without #hovering?
 																																																						 ### the 'hovering?' business...
 				}
 				slot.leave{slot.append{border black}}  ### ...even if i call 'keypress{}' in the leave block 
